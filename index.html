@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content = "Selling 3D printed creations that are nifty and useful. each made with quality and care."/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Da|Roboto&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      body {
+        padding-bottom: 150px;
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0.9) 50%,rgba(255,255,255,0.9) 100%), url("back2.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 300px 300px;
+        background-position: 50% 50%;
+
+      }
+      p {
+        font-family: 'Roboto', sans-serif;
+      }
+
+      nav {
+        font-family: 'Permanent Marker', sans-serif;
+      }
+
+      .card-header {
+        font-size: 150%;
+      }
+
+      .border-right {
+        border-right: 2px solid #333 !important;
+
+      }
+
+      .navbar {
+         font-size: 130% !important;
+      }
+
+
+      h1 {
+       overflow: hidden;
+       text-align: center;
+       font-family: 'Baloo Da', cursive;
+      }
+      h1:before,
+      h1:after {
+       background-color: #333;
+       content: "";
+       display: inline-block;
+       height: 3px;
+       position: relative;
+       vertical-align: middle;
+       width: 50%;
+      }
+      h1:before {
+       right: 0.5em;
+       margin-left: -50%;
+      }
+      h1:after {
+       left: 0.5em;
+       margin-right: -50%;
+      }
+      .header-container {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+      }
+      .video-container {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+      }
+      video {
+        margin: auto;
+        position: absolute;
+        z-index: -1;
+        top: 40%;
+        left: 54%;
+        transform: translate(-50%, -50%);
+        opacity: .76;
+        width: auto;
+        height: auto;
+      }
+
+      #content {
+        text-align:center;
+        margin-top: 10%;
+        height: auto;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+        letter-spacing: 5px;
+        font-family: 'Permanent Marker', sans-serif;
+      }
+      #section1:before, #section2:before {
+        padding-top: 30px;
+        display: block;
+        content:"";
+      }
+
+
+      @media (max-width: 420px) {
+
+
+        .display-3 {
+          font-size: 150% !important;
+        }
+        #flex {
+          font-size: 325% !important;
+        }
+        #content {
+          margin-top: 25% !important;
+        }
+        body {
+          background-size: 200px 200px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        #flex {
+          font-size: 450%;
+        }
+        .border-right {
+          border-right: 0px !important;
+        }
+      }
+
+      @media (max-width: 950px) {
+
+        .display-1 {
+          font-size: 300%;
+        }
+        .display-3 {
+          font-size: 200%;
+        }
+        #content {
+          margin-top: 20%;
+        }
+      }
+
+
+      @media (min-width: 992px) {
+       }
+
+
+      @media (min-width: 1200px) {
+
+      }
+
+    </style>
+    <title>LudicrousCreations</title>
+
+  </head>
+  <body data-spy = "scroll" data-target = ".navbar" data-offset="50">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+
+      <a class="navbar-brand" href="index.html">
+        <img src="logo5.png" width="180" height="50" class="d-inline-block align-top" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav w-100 nav-justified">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">Suggestions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="creations.html">Creations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.etsy.com/shop/LudicrousCreations?ref=search_shop_redirect">Etsy Shop</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+
+      <div class = "header-container">
+
+        <div class = "video-container">
+          <video preload autoplay loop muted poster = "poster.png">
+            <source src = "final2.mp4" type = "video/mp4">
+          </video>
+          <h2 class = "display-1" id = "content">Innovative. Creative. Distinctive.</h2>
+          <h2 class = "display-3" id = "content">LudicrousCreations</h2>
+        </div>
+      </div>
+      <div class = "alert alert-success alert-dismissible fade show text-center mb-0" role = "alert">
+        Use code <strong>WEBSITE</strong> for 10% off!
+        <a href = "creations.html" role = "button"  class="btn btn-outline-success ml-3">Buy Now</a>
+        <button type = "button" class = "close" data-dismiss = "alert" aria-label = "Close">
+          <span aria-hidden = "true">&times;</span>
+        </button>
+      </div>
+
+
+
+      <div class = "container">
+         <h1 id = "flex" class = "display-1 text-center mt-5"> Welcome </h1>
+         <p class = "lead mt-5"> Welcome to the website where you will find many nifty creations of ours! We work hard in designing useful gadgets through 3D software, and printing them out using our 3D printers. If you want to purchase any of our creations, please click on the creations tab in the navigation bar, where you will be redirected to a gallery that displays our innovative creations. Every creation that we make can be purchased through Etsy (links can be found in the gallery). We strive to ensure that each one of our creations are made with quality and care, making sure that you are one hundred percent satisfied with your purchase. If you have any suggestions on future creations we should sell or want to provide feedback in general, please fill out a suggestions form through clicking on the suggestions tab on the navigation bar. We value everyone’s inputs, and they might even make it to our shop! Thank you for checking out Ludicrous Creations. </p>
+
+         <div id = "section1">
+           <h1 id = "flex" class = "display-1 text-center mt-5">Who Are We?</h1>
+           <div class = "text-center">
+             <p class = "lead mt-5"> We are a brother duo (Bo and Kevin)</p>
+             <p class = "lead">Bo focuses on coming up with and making our creations, while Kevin designs the website and logo for our company.</p>
+           </div>
+           <div class = "row">
+             <div class = "col-md-6 border-right">
+               <div class = "text-center">
+                 <h5 class = "mt-4">Bo the Creator:</h5>
+                 <p class = "lead mt-4">3D printing started out as a hobby for almost 7 years ago now. I started off with designing very simple items such as phone stands or flashlight bike mounts for friends. Throughout college, I gained experiences in 3D printing from design and research projects. Then an internet forum introduced me to Etsy where I can sell my creations and here I am with my own store on Etsy. I am an engineer by day and a 3D printing tinkerer/Etsy seller at night!</p>
+               </div>
+             </div>
+             <div class = "col-md-6">
+               <div class = "text-center">
+                 <h5 class = "mt-4">Kevin the Tech Savvy:</h5>
+                 <p class = "lead mt-4">I am a high school student who is very interested in the computer science field. My brother Bo introduced me to 3D printing, which I found fascinating and thus tagged along to the makings of Ludicrous Creations. I am able to apply my interest in computer science through creating the logo for Ludicrous Creations, as well as making the website for the company. </p>
+                 </div>
+             </div>
+        </div>
+         <div id = "section2">
+           <h1 id = "flex" class = "display-1 text-center mt-5">Got Ideas?</h1>
+           <p class = "lead mt-5"> Suggestions? Tell us by submitting a form below. Every idea counts! </p>
+         </div>
+
+         <form class = "mb-5">
+           <div class = "form-group">
+             <label>Name</label>
+             <input type = "text" class = "form-control" placeholder = "Add Name" id = "nameInput">
+           </div>
+           <div class = "form-group">
+             <label>Suggestion</label>
+             <textarea type = "text" class = "form-control" placeholder = "Add Meesage" id = "messageInput"></textarea>
+           </div>
+           <div class = "text-center">
+             <button type = "button" id = "submit" class = "btn btn-primary" onclick="pushMessage()">Submit</button>
+           </div>
+         </form>
+      </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src = "main.js"></script>
+  </body>
+</html>
