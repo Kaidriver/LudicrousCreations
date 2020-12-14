@@ -1,6 +1,16 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
   <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFP2NQ77JP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZFP2NQ77JP');
+    </script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="description" content = "Selling 3D printed creations that are nifty and useful. each made with quality and care."/>
@@ -8,21 +18,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Da|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da|Roboto&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://app.snipcart.com">
+    <link rel="preconnect" href="https://cdn.snipcart.com">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.css" />
     <style>
       body {
         padding-bottom: 150px;
-        background-image: linear-gradient(to bottom, rgba(255,255,255,0.9) 50%,rgba(255,255,255,0.9) 100%), url("back2.png");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 300px 300px;
-        background-position: 50% 50%;
-
-      }
-      p {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Baloo Da', cursive;
       }
 
       nav {
@@ -35,7 +41,6 @@
 
       .border-right {
         border-right: 2px solid #333 !important;
-
       }
 
       .navbar {
@@ -111,7 +116,41 @@
         content:"";
       }
 
+      #banner {
+        margin-top: 5%;
+        max-width:100%;
+        max-height:100%;
+      }
 
+      .card {
+        background-color: transparent !important;
+        border: none !important;
+        width: 30%;
+        margin-bottom: 3%;
+      }
+      .card-title {
+        text-align: center;
+        margin-bottom: -0.8%;
+      }
+      .card-body {
+        padding: 2% !important;
+      }
+
+      .submit {
+        margin-top: 1.5%;
+        border-width: thick;
+        font-size: 100%;
+        padding: 0.5% 2%;
+        color: black;
+      }
+
+      .shopbtn {
+        margin-top: 5%;
+        border-width: thick;
+        font-size: 150%;
+        padding: 2% 4%;
+        color: black;
+      }
       @media (max-width: 420px) {
 
 
@@ -180,13 +219,13 @@
             <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="creations.html">Shop</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#section1">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#section2">Suggestions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="creations.html">Creations</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://www.etsy.com/shop/LudicrousCreations?ref=search_shop_redirect">Etsy Shop</a>
@@ -208,7 +247,7 @@
         </div>
       </div>
       <div class = "alert alert-success alert-dismissible fade show text-center mb-0" role = "alert">
-        Use code <strong>WEBSITE</strong> for 10% off!
+        Use code <strong>WEBSITE</strong> for 60% off!
         <a href = "creations.html" role = "button"  class="btn btn-outline-success ml-3">Buy Now</a>
         <button type = "button" class = "close" data-dismiss = "alert" aria-label = "Close">
           <span aria-hidden = "true">&times;</span>
@@ -218,33 +257,43 @@
 
 
       <div class = "container">
-         <h1 id = "flex" class = "display-1 text-center mt-5"> Welcome </h1>
-         <p class = "lead mt-5"> Welcome to the website where you will find many nifty creations of ours! We work hard in designing useful gadgets through 3D software, and printing them out using our 3D printers. If you want to purchase any of our creations, please click on the creations tab in the navigation bar, where you will be redirected to a gallery that displays our innovative creations. Every creation that we make can be purchased through Etsy (links can be found in the gallery). We strive to ensure that each one of our creations are made with quality and care, making sure that you are one hundred percent satisfied with your purchase. If you have any suggestions on future creations we should sell or want to provide feedback in general, please fill out a suggestions form through clicking on the suggestions tab on the navigation bar. We value everyone’s inputs, and they might even make it to our shop! Thank you for checking out Ludicrous Creations. </p>
 
-         <div id = "section1">
-           <h1 id = "flex" class = "display-1 text-center mt-5">Who Are We?</h1>
-           <div class = "text-center">
-             <p class = "lead mt-5"> We are a brother duo (Bo and Kaiwen)</p>
-             <p class = "lead">Bo focuses on designing our creations, while Kaiwen is in charge of the website as well as marketing.</p>
-           </div>
-           <div class = "row">
-             <div class = "col-md-6 border-right">
-               <div class = "text-center">
-                 <h5 class = "mt-4">Bo</h5>
-                 <p class = "lead mt-4">3D printing started out as a hobby for almost 7 years ago now. I started off with designing very simple items such as phone stands or flashlight bike mounts for friends. Throughout college, I gained experiences in 3D printing from design and research projects. Then an internet forum introduced me to Etsy where I can sell my creations and here I am with my own store on Etsy. I am an engineer by day and a 3D printing tinkerer/Etsy seller at night!</p>
-               </div>
-             </div>
-             <div class = "col-md-6">
-               <div class = "text-center">
-                 <h5 class = "mt-4">Kaiwen</h5>
-                 <p class = "lead mt-4">I am a high school student who is very interested in the computer science field. My brother Bo introduced me to 3D printing, which I found fascinating and thus tagged along to the makings of Ludicrous Creations. I am able to apply my interest in computer science through creating the logo for Ludicrous Creations, as well as making the website for the company. </p>
-                 </div>
-             </div>
+        <div id = "section1">
+          <img id = "banner" src = "banner.png">
         </div>
+        <h1 id = "flex" class = "display-1 text-center mt-5"> About Our Products </h1>
+        <div class="d-flex justify-content-between">
+          <div class="card">
+            <img class="card-img-top" src="ballfinished1.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Solves Every Day Problems</h5>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="ballfinished2.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Created with Precision Printing</h5>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="ballfinished3.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">100% Customer Satisfaction Guaranteed</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <a href = "creations.html" role = "button" class="btn btn-outline-dark shopbtn">Check Them Out</a>
+        </div>
+
          <div id = "section2">
            <h1 id = "flex" class = "display-1 text-center mt-5">Got Ideas?</h1>
-           <p class = "lead mt-5"> Suggestions? Tell us by submitting a form below. Every idea counts! </p>
+           <p class = "lead mt-5"> Suggestions or general feedback? Tell us by submitting a form below. Every idea counts! </p>
          </div>
+
 
          <form class = "mb-5">
            <div class = "form-group">
@@ -256,7 +305,7 @@
              <textarea type = "text" class = "form-control" placeholder = "Add Meesage" id = "messageInput"></textarea>
            </div>
            <div class = "text-center">
-             <button type = "button" id = "submit" class = "btn btn-primary" onclick="pushMessage()">Submit</button>
+             <button type = "button" class = "btn btn-outline-dark submit" onclick="pushMessage()">Submit</button>
            </div>
          </form>
       </div>
@@ -270,5 +319,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src = "main.js"></script>
+
+    <script async src="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="NjQ1ZGVmZjQtYzFjYS00MjFmLTk4OWUtOTYyNThmN2UxZTRjNjM3NDI4MTU2ODA2NDEzMzk3" data-config-modal-style="side"></div>
   </body>
 </html>
