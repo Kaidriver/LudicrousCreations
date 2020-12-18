@@ -62,6 +62,13 @@
         display: inline-block;
         color: #a1a1a1
       }
+
+      .products {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
       h1 {
        overflow: hidden;
        text-align: center;
@@ -93,6 +100,14 @@
 
         #sub-title {
           font-size: 100%;
+        }
+
+        .card {
+          width: 47%;
+        }
+
+        .card-title {
+          font-size: 80%;
         }
       }
 
@@ -147,7 +162,7 @@
           <p id = "sub-title" class = "lead">Free shipping with every order!</p>
       </div>
 
-      <div class="d-flex justify-content-between">
+      <div class = "products">
         <div class="card">
           <a href="holster.html"><img class="card-img-top" src="beerholster.jpg" alt="Card image cap"></a>
           <div class="card-body">
@@ -174,9 +189,7 @@
             <img class = "star-review" src = "star.png">
           </div>
         </div>
-      </div>
 
-      <div class="d-flex justify-content-between">
         <div class="card">
           <a href = "watchstand.html"><img class="card-img-top" src="watch5.jpg" alt="Card image cap"></a>
           <div class="card-body">
@@ -203,9 +216,7 @@
             <img class = "star-review" src = "star.png">
           </div>
         </div>
-      </div>
 
-      <div class="d-flex justify-content-between">
         <div class="card">
           <a href = "junk.html"><img class="card-img-top" src="junk1.jpg" alt="Card image cap"></a>
           <div class="card-body">
