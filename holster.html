@@ -134,6 +134,13 @@
       .jumbo-title:after {
         background-color: white;
       }
+
+      .details {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
       h1:before,
       h1:after {
        background-color: black;
@@ -169,7 +176,7 @@
         #flex, #section2 {
           font-size: 375%;
         }
-        .card {
+        .review-block {
           width: 100% !important;
         }
 
@@ -185,9 +192,11 @@
         #shipping-text {
           font-size: 70%;
         }
-
+        .product-details {
+          width: 50% !important;
+        }
         .product-details-title {
-          font-size: 100%;
+          font-size: 120%;
         }
       }
       @media (max-width: 420px) {
@@ -196,7 +205,11 @@
         }
 
         .product-details-title {
-          font-size: 80%;
+          font-size: 150%;
+        }
+
+        .product-details {
+          width: 100% !important;
         }
       }
 
@@ -327,7 +340,7 @@
             data-item-custom1-value="Circle"
             data-item-custom2-name="Color"
             data-item-custom2-options="Red|Yellow|Green|Blue|Black"
-            data-item-custom2-value="Red" disabled>
+            data-item-custom2-value="Red">
             Add to Cart
           </button>
         </div>
@@ -335,7 +348,8 @@
 
 
       <h1 id = "flex" class = "display-1 mt-5">Product Details</h1>
-      <div class="d-flex justify-content-between">
+
+      <div class="details">
         <div class="card product-details">
           <img class="card-img-top" src="holsterdetail1.png" alt="Card image cap">
           <div class="card-body product-details-body">
@@ -356,8 +370,7 @@
             <h5 class="card-title product-details-title">Holds 12/24 oz Cans and Bottles</h5>
           </div>
         </div>
-      </div>
-      <div class="d-flex justify-content-between">
+
         <div class="card product-details">
           <img class="card-img-top" src="holsterdetail4.png" alt="Card image cap">
           <div class="card-body product-details-body">
