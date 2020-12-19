@@ -9,50 +9,141 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Da|Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://app.snipcart.com">
+    <link rel="preconnect" href="https://cdn.snipcart.com">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.css" />
     <style>
       body {
-        background-image: linear-gradient(to bottom, rgba(255,255,255,0.9) 50%,rgba(255,255,255,0.9) 100%), url("back2.png");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 300px 300px;
-        background-position: 70% 70%;
+        font-family: 'Baloo Da', cursive;
       }
 
       .navbar {
          font-size: 130% !important;
-      }
-      
-      .jumbotron {
-        background-image: url("science.png");
-        background-size: cover;
-        opacity: .86;
-        color: white;
+         font-family: 'Permanent Marker', sans-serif;
       }
 
       .card-header {
         font-size: 150%;
-
-      }
-      thead, tbody {
-        font-family: 'Roboto', sans-serif;
-      }
-      nav, nav li{
         font-family: 'Permanent Marker', sans-serif;
       }
-      p {
-        font-family: 'Baloo Da', cursive;
+      .product-details {
+        background-color: transparent !important;
+        border: none !important;
+        margin-bottom: 3%;
       }
-      li {
-        font-family: 'Roboto', sans-serif;
+      .product-details-title {
+        text-align: center;
+        margin-bottom: -0.8%;
       }
+      .product-details-body {
+        padding: 2% !important;
+      }
+
+      .card {
+        width: 30% !important;
+      }
+
+      .review-block {
+        margin-bottom: 1.5%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      .reviews {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .star-rating {
+        width: 5em;
+      }
+
+      .jumbotron {
+        background-image: url("science.png");
+        background-size: cover;
+        padding: 3% !important;
+        color: white;
+      }
+
       h1 {
-       overflow: hidden;
-       text-align: center;
+        overflow: hidden;
+        text-align: center;
+      }
+      .jumbo-title {
        font-family: 'Permanent Marker', sans-serif;
       }
+
+      .product-info {
+        margin-bottom: -3%;
+      }
+      .star-review {
+        width: 5em;
+        margin-bottom: 1.5%;
+        display: inline-block;
+      }
+
+      .star-title {
+        display: inline-block;
+        color: #a1a1a1
+      }
+
+      #price {
+        margin-top: 2%;
+      }
+
+      #product-title {
+        margin-bottom: -1%;
+      }
+
+      #shipping-img{
+        width: 7%;
+        display: inline-block;
+      }
+      #shipping-text {
+        font-size: 100%;
+        display: inline-block;
+        margin-left: 2%;
+        margin-top: 6%;
+      }
+      #product-fields {
+        margin-top: 5%;
+      }
+
+      #snipcart {
+        font-family: 'Baloo Da', cursive !important;
+      }
+      .backbutton, .nextbutton {
+        float: right;
+        margin-left: 2%;
+        margin-bottom: 5%;
+        padding: 0.5% 2%;
+      }
+
+      .widen, .dropdown-menu{
+        padding: 3% 32%;
+      }
+
+      .buy-button {
+        margin-top: 5%;
+        width: 100%;
+        padding: 2%;
+        font-size: 110%;
+        background-color: transparent;
+      }
+      .jumbo-title:before,
+      .jumbo-title:after {
+        background-color: white;
+      }
+
+      .details {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
       h1:before,
       h1:after {
-       background-color: white;
+       background-color: black;
        content: "";
        display: inline-block;
        height: 3px;
@@ -68,20 +159,67 @@
        left: 0.5em;
        margin-right: -50%;
       }
-      @media (max-width: 420px) {
-        body {
-          background-size: 200px 200px;
-          background-position: 50% 50%;
+
+      h3 {
+        font-size: 220%;
+      }
+
+      #price {
+        font-size: 150%;
+      }
+
+      #flex, #section2 {
+        text-align: center;
+        font-size: 425%;
+      }
+      @media (max-width: 768px) {
+        #flex, #section2 {
+          font-size: 375%;
+        }
+        .review-block {
+          width: 100% !important;
+        }
+
+        .jumbo-title {
+          margin-top: 5%;
+          font-size: 250%;
+        }
+
+        #sub-title {
+          font-size: 100%;
+        }
+
+        #shipping-text {
+          font-size: 70%;
+        }
+        .product-details {
+          width: 50% !important;
+        }
+        .product-details-title {
+          font-size: 120%;
         }
       }
+      @media (max-width: 480px) {
+        #flex, #section2 {
+          font-size: 275% !important;
+        }
+
+        .product-details-title {
+          font-size: 150%;
+        }
+
+        .product-details {
+          width: 100% !important;
+        }
+      }
+
     </style>
     <title>LudicrousCreations</title>
   </head>
   <body data-spy = "scroll" data-target = ".navbar" data-offset="50">
     <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
       <a class="navbar-brand" href="index.html">
-        <img src="logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-        LudicrousCreations
+        <img src="logo5.png" width="180" height="50" class="d-inline-block align-top" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -92,17 +230,14 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="creations.html">Shop<span class="sr-only">(current)</span></a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html#section1">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html#section2">Suggestions</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="creations.html">Creations<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.etsy.com/shop/LudicrousCreations?ref=search_shop_redirect">Etsy Shop</a>
           </li>
         </ul>
       </div>
@@ -110,12 +245,12 @@
 
     <div class = "container">
       <div class = "jumbotron text-center mt-5">
-        <h1 class = "display-3">Watch Stand</h1>
-        <p class = "lead">Simplistic design - Perfect for displaying any watch</p>
+        <h1 class = "display-3 jumbo-title">watch Stand</h1>
+        <p id = "sub-title" class = "lead">Simplistic design to display exquisite watches</p>
       </div>
-      <div class = "row">
-        <div class = "col-md-5 mb-5">
-          <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+      <div class = "row product-info">
+        <div class = "col-lg-5 mb-5">
+          <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel" data-interval="false">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
@@ -126,22 +261,22 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100 img-responsive" src="watch4.jpg" alt="First slide">
+                <img class="d-block w-100" src="watch1.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100 img-responsive" src="watch1.jpg" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="watch2.jpg" alt="Third slide">
+                <img class="d-block w-100" src="watch2.jpg" alt="Second slide">
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="watch3.jpg" alt="Third slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="watch5.jpg" alt="Third slide">
+                <img class="d-block w-100" src="watch4.jpg" alt="Fourth slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="watch6.jpg" alt="Third slide">
+                <img class="d-block w-100" src="watch5.jpg" alt="Fifth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="watch6.jpg" alt="Sixth slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
@@ -154,39 +289,113 @@
             </a>
           </div>
           <br>
-          <div class="table-responsive">
-            <table class="table table-striped text-center">
-              <thead>
-                <tr>
-                  <th scope="col">Dimensions (LxWxH)</th>
-                  <th scope="col">Loop Diameter</th>
-                  <th scope="col">Purchase</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>2" x 2.6" x 3"</td>
-                  <td>2.25 inches</td>
-                  <td><a role = "button" class = "btn btn-block btn-primary" href = "https://www.etsy.com/listing/711102781/3d-printed-watch-stand-watch-accessory?ref=shop_home_active_1" target = "_blank">Buy</a></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
         </div>
-        <div class = "col-md-7 mb-5">
-            <ul class = "list-unstyled lead">
-              <li>This watch stand is perfect for showcasing all of your exquisite watches! The simplistic and light design makes sure that your watch will stand out and shine. The loop of the stand measures at 2.25 inches in diameter, meaning most of your watches will be able to fit on this stand. The loop also has a hole that will perfectly fit an Apple Watch charger, allowing you to charge your watch while it’s on display! The whole stand measures at a height of 3 inches, with a width (measured from the base) of 2 inches and depth of 2.6 inches. The watch stand also comes in a variety of colors, with special requests also accepted (at an additional charge)!</li>
-              <br>
-              <li>This item is created with a 3D printer. Thus each item is unique and may have small variations from print to print.</li>
-              <br>
-          </ul>
+        <div class = "col-lg-7 mb-5">
+          <h3 id = "product-title">Watch Stand (Choose Color)</h3>
+
+          <h5 class = "star-title">5.0</h5>
+          <img class = "star-review" src = "5stars.png">
+          <h5 id = "price">$12.00 Free Shipping</h5>
+
+          <form id ="product-fields">
+            <div class = "form-row mt-3">
+              <div class="form-group col-7">
+                <label for="exampleFormControlSelect1">Select Color</label>
+                <select class="form-control" id="select-color">
+                  <option>Red</option>
+                  <option>Yellow</option>
+                  <option>Green</option>
+                  <option>Blue</option>
+                  <option>Black</option>
+                </select>
+              </div>
+              <div class="form-group col-5">
+                <label for="exampleFormControlSelect1">Quantity</label>
+                <input type="number" min="1" class="form-control" id="quantity" placeholder="1">
+              </div>
+            </div>
+          </form>
+
+          <img id ="shipping-img" src = "shipping.png">
+          <h5 id = "shipping-text">Expected Delivery: 5-8 Days (Ships from Royal Oak, MI)</h5>
+          <br>
+          <button class = "buy-button snipcart-add-item"
+            data-item-id="3"
+            data-item-price="12.00"
+            data-item-url="/watchstand.html"
+            data-item-name="Watch Stand"
+            data-item-image="watch1.jpg"
+            data-item-quantity="1"
+            data-item-custom1-name="Color"
+            data-item-custom1-options="Red|Yellow|Green|Blue|Black"
+            data-item-custom1-value="Red" disabled>
+            Add to Cart
+          </button>
         </div>
       </div>
+
+
+      <h1 id = "flex" class = "display-1 mt-5">Product Details</h1>
+
+      <div class="details">
+        <div class="card product-details">
+          <img class="card-img-top" src="watchdetail1.png" alt="Card image cap">
+          <div class="card-body product-details-body">
+            <h5 class="card-title product-details-title">Simplistic Design to Highlight Watch</h5>
+          </div>
+        </div>
+
+        <div class="card product-details">
+          <img class="card-img-top" src="watchdetail2.png" alt="Card image cap">
+          <div class="card-body product-details-body">
+            <h5 class="card-title product-details-title">Fits Watches of Any Size</h5>
+          </div>
+        </div>
+
+        <div class="card product-details">
+          <img class="card-img-top" src="watchdetail3.png" alt="Card image cap">
+          <div class="card-body product-details-body">
+            <h5 class="card-title product-details-title">Hole in Back to Charge Smartwatches</h5>
+          </div>
+        </div>
+
+        <div class="card product-details">
+          <img class="card-img-top" src="holsterdetail6.png" alt="Card image cap">
+          <div class="card-body product-details-body">
+            <h5 class="card-title product-details-title">Perfect Gift for Watch Collectors</h5>
+          </div>
+        </div>
+
+        <div class="card product-details">
+          <img class="card-img-top" src="watchdetail5.png" alt="Card image cap">
+          <div class="card-body product-details-body">
+            <h5 class="card-title product-details-title">Product Dimensions (Width/Height/Diameter)</h5>
+          </div>
+        </div>
+
+        <div class="card product-details">
+          <img class="card-img-top" src="holsterdetail4.png" alt="Card image cap">
+          <div class="card-body product-details-body">
+            <h5 class="card-title product-details-title">High Quality Material</h5>
+          </div>
+        </div>
+      </div>
+
+      <h1 id = "section2" class = "display-1 mt-5">Reviews</h1>
+      <div class = "reviews"></div>
+
+      <button type = "button" class="btn btn-outline-dark nextbutton">Next</button>
+      <button type = "button" class="btn btn-outline-dark backbutton">Back</button>
     </div>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src = "reviewscript.js"></script>
+    <script src = "watchbuy.js"></script>
+
+    <script async src="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="NjQ1ZGVmZjQtYzFjYS00MjFmLTk4OWUtOTYyNThmN2UxZTRjNjM3NDI4MTU2ODA2NDEzMzk3" data-config-modal-style="side"></div>
   </body>
 </html>
