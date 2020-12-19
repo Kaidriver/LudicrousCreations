@@ -12,7 +12,6 @@ qtyField.addEventListener("change", function() {
 
 designField.addEventListener("change", function() {
   buyBtn.setAttribute("data-item-custom1-value", designField.value);
-  buyBtn.setAttribute("data-item-price", prices[sizes.indexOf(designField.value)]);
   priceText.innerHTML = "$" + prices[sizes.indexOf(designField.value)] + ".00 Free Shipping";
 })
 

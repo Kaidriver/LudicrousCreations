@@ -5,55 +5,145 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="favicon.ico">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Da|Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://app.snipcart.com">
+    <link rel="preconnect" href="https://cdn.snipcart.com">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.css" />
     <style>
       body {
-        background-image: linear-gradient(to bottom, rgba(255,255,255,0.9) 50%,rgba(255,255,255,0.9) 100%), url("back2.png");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 300px 300px;
-        background-position: 70% 70%;
+        font-family: 'Baloo Da', cursive;
       }
 
       .navbar {
          font-size: 130% !important;
-      }
-
-      .jumbotron {
-        background-image: url("science.png");
-        background-size: cover;
-        opacity: .86;
-        color: white;
+         font-family: 'Permanent Marker', sans-serif;
       }
 
       .card-header {
         font-size: 150%;
         font-family: 'Permanent Marker', sans-serif;
       }
-      thead, tbody {
-        font-family: 'Roboto', sans-serif;
+      .product-details {
+        background-color: transparent !important;
+        border: none !important;
+        margin-bottom: 3%;
       }
-      nav, nav li{
-        font-family: 'Permanent Marker', sans-serif;
+      .product-details-title {
+        text-align: center;
+        margin-bottom: -0.8%;
       }
-      p {
-        font-family: 'Baloo Da', cursive;
+      .product-details-body {
+        padding: 2% !important;
       }
-      li {
-        font-family: 'Roboto', sans-serif;
+
+      .card {
+        width: 30% !important;
       }
+
+      .review-block {
+        margin-bottom: 1.5%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      .reviews {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .star-rating {
+        width: 5em;
+      }
+
+      .jumbotron {
+        background-image: url("science.png");
+        background-size: cover;
+        padding: 3% !important;
+        color: white;
+      }
+
       h1 {
-       overflow: hidden;
-       text-align: center;
+        overflow: hidden;
+        text-align: center;
+      }
+      .jumbo-title {
        font-family: 'Permanent Marker', sans-serif;
       }
+
+      .product-info {
+        margin-bottom: -3%;
+      }
+      .star-review {
+        width: 5em;
+        margin-bottom: 1.5%;
+        display: inline-block;
+      }
+
+      .star-title {
+        display: inline-block;
+        color: #a1a1a1
+      }
+
+      #price {
+        margin-top: 2%;
+      }
+
+      #product-title {
+        margin-bottom: -1%;
+      }
+
+      #shipping-img{
+        width: 7%;
+        display: inline-block;
+      }
+      #shipping-text {
+        font-size: 100%;
+        display: inline-block;
+        margin-left: 2%;
+        margin-top: 6%;
+      }
+      #product-fields {
+        margin-top: 5%;
+      }
+
+      #snipcart {
+        font-family: 'Baloo Da', cursive !important;
+      }
+      .backbutton, .nextbutton {
+        float: right;
+        margin-left: 2%;
+        margin-bottom: 5%;
+        padding: 0.5% 2%;
+      }
+
+      .widen, .dropdown-menu{
+        padding: 3% 32%;
+      }
+
+      .buy-button {
+        margin-top: 5%;
+        width: 100%;
+        padding: 2%;
+        font-size: 110%;
+        background-color: transparent;
+      }
+      .jumbo-title:before,
+      .jumbo-title:after {
+        background-color: white;
+      }
+
+      .details {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
       h1:before,
       h1:after {
-       background-color: white;
+       background-color: black;
        content: "";
        display: inline-block;
        height: 3px;
@@ -69,21 +159,67 @@
        left: 0.5em;
        margin-right: -50%;
       }
-      @media (max-width: 420px) {
-        body {
-          background-size: 200px 200px;
-          background-position: 50% 50%;
+
+      h3 {
+        font-size: 220%;
+      }
+
+      #price {
+        font-size: 150%;
+      }
+
+      #flex, #section2 {
+        text-align: center;
+        font-size: 425%;
+      }
+      @media (max-width: 768px) {
+        #flex, #section2 {
+          font-size: 375%;
+        }
+        .review-block {
+          width: 100% !important;
+        }
+
+        .jumbo-title {
+          margin-top: 5%;
+          font-size: 250%;
+        }
+
+        #sub-title {
+          font-size: 100%;
+        }
+
+        #shipping-text {
+          font-size: 70%;
+        }
+        .product-details {
+          width: 50% !important;
+        }
+        .product-details-title {
+          font-size: 120%;
         }
       }
+      @media (max-width: 480px) {
+        #flex, #section2 {
+          font-size: 275% !important;
+        }
+
+        .product-details-title {
+          font-size: 150%;
+        }
+
+        .product-details {
+          width: 100% !important;
+        }
+      }
+
     </style>
     <title>LudicrousCreations</title>
-
   </head>
   <body data-spy = "scroll" data-target = ".navbar" data-offset="50">
     <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
       <a class="navbar-brand" href="index.html">
-        <img src="logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-        LudicrousCreations
+        <img src="logo5.png" width="180" height="50" class="d-inline-block align-top" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -94,17 +230,14 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="creations.html">Shop<span class="sr-only">(current)</span></a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html#section1">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html#section2">Suggestions</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="creations.html">Creations<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.etsy.com/shop/LudicrousCreations?ref=search_shop_redirect">Etsy Shop</a>
           </li>
         </ul>
       </div>
@@ -112,79 +245,169 @@
 
     <div class = "container">
       <div class = "jumbotron text-center mt-5">
-        <h1 class = "display-3">Phone Stands</h1>
-        <p class = "lead">Handy in many situations - comes in many styles</p>
+        <h1 class = "display-3 jumbo-title">Easel Phone Stand</h1>
+        <p id = "sub-title" class = "lead">Perfect for displaying phones and other small items</p>
       </div>
-      <div class = "row">
+      <div class = "row product-info">
         <div class = "col-md-5 mb-5">
-          <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
+          <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel" data-interval="false">
             <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators3" data-slide-to="4"></li>
+              <li data-target="#carouselExampleIndicators3" data-slide-to="5"></li>
+              <li data-target="#carouselExampleIndicators3" data-slide-to="6"></li>
+              <li data-target="#carouselExampleIndicators3" data-slide-to="7"></li>
+              <li data-target="#carouselExampleIndicators3" data-slide-to="8"></li>
             </ol>
-            <div class="carousel-inner" role = "listbox">
+            <div class="carousel-inner">
               <div class="carousel-item active">
-                <img id = "displayed1" class="d-block w-100" src="phone1.jpg" alt="First slide">
+                <img class="d-block w-100" src="easelstand1.png" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img id = "displayed2" class="d-block w-100" src="phone2.jpg" alt="Second slide">
+                <img class="d-block w-100" src="easelstand2.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="easelstand3.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="easelstand4.png" alt="Fourth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="easelstand5.png" alt="Fifth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="easelstand6.png" alt="Sixth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="easelstand7.png" alt="Seventh slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="easelstand8.png" alt="Eighth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="easelstand9.png" alt="Ninth slide">
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
           </div>
           <br>
-          <div class="table-responsive">
-            <table class="table table-striped text-center">
-              <thead>
-                <tr>
-                  <th scope="col">Base (LxW)</th>
-                  <th scope="col">Height</th>
-                  <th scope="col">Purchase</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>2 <sup>1</sup>&frasl;<sub>4</sub> x <sup>11</sup>&frasl;<sub>16</sub> inches</td>
-                  <td>4 <sup>1</sup>&frasl;<sub>4</sub> inches</td>
-                  <td><a id = "buy" role = "button" class = "btn btn-block btn-primary" href = "https://www.etsy.com/listing/589904283/high-heels-phone-stand-gift-for-her?ref=shop_home_active_7" target = "_blank">Buy</a></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <p class = "float-right">*This will redirect to Etsy</p>
         </div>
         <div class = "col-md-7 mb-5">
-            <ul class = "list-unstyled lead">
-              <li>Make your phone stand out with this unique High Heels phone stand that also acts as a desk piece!</li>
-              <br>
-              <li>Available in many different colors!</li>
-              <li>Perfect gift for all types of occasion!</li>
-              <br>
-              <li>Fits:</li>
-              <li>-All IPhones</li>
-              <li>-All Samsung Galaxy phones</li>
-              <li>-All Google Pixel phones</li>
-              <br>
-              <li>-Most phones with dimensions up to 3.8in (width) x 6.8in (height) (Plus sized phones)</li>
-              <br>
-              <li>This item is created with a 3D printer. Thus each item is unique and may have small variations from print to print.</li>
-              <br>
-              <li>I first created this design as a gift for my cousin for her new IPhone and she really liked the unique design. For Etsy, I tweaked the design so that it holds most phones and tested it with many different phones especially the plus sized models!</li>
-              <br>
-          </ul>
+          <h3 id = "product-title">Adjustable Easel Phone Stand (Choose Color)</h3>
+
+          <h5 class = "star-title">4.9</h5>
+          <img class = "star-review" src = "5stars.png">
+          <h5 id = "price">$12.00 Free Shipping</h5>
+
+          <form id ="product-fields">
+            <div class = "form-row mt-3">
+              <div class="form-group col-7">
+                <label for="exampleFormControlSelect1">Select Color</label>
+                <select class="form-control" id="select-color">
+                  <option>Red</option>
+                  <option>Yellow</option>
+                  <option>Green</option>
+                  <option>Blue</option>
+                  <option>Black</option>
+                </select>
+              </div>
+              <div class="form-group col-5">
+                <label for="exampleFormControlSelect1">Quantity</label>
+                <input type="number" min="1" class="form-control" id="quantity" placeholder="1">
+              </div>
+            </div>
+          </form>
+
+          <img id ="shipping-img" src = "shipping.png">
+          <h5 id = "shipping-text">Expected Delivery: 5-8 Days (Ships from Royal Oak, MI)</h5>
+          <br>
+          <button class = "buy-button snipcart-add-item"
+            data-item-id="3"
+            data-item-price="12.00"
+            data-item-url="/stands.html"
+            data-item-name="Adjustable Easel Phone Stand"
+            data-item-image="easelstand1.png"
+            data-item-quantity="1"
+            data-item-custom1-name="Color"
+            data-item-custom1-options="Red|Yellow|Green|Blue|Black"
+            data-item-custom1-value="Red" disabled>
+            Add to Cart
+          </button>
         </div>
       </div>
+
+
+      <h1 id = "flex" class = "display-1 mt-5">Product Details</h1>
+
+      <div class="details">
+        <div class="card product-details">
+          <img class="card-img-top" src="phonestand1.png" alt="Card image cap">
+          <div class="card-body product-details-body">
+            <h5 class="card-title product-details-title">Fits All Apple, Samsung, Google Phones, and Most Other Phones</h5>
+          </div>
+        </div>
+
+        <div class="card product-details">
+          <img class="card-img-top" src="phonestand2.png" alt="Card image cap">
+          <div class="card-body product-details-body">
+            <h5 class="card-title product-details-title">Use to Display Other Small Items</h5>
+          </div>
+        </div>
+
+        <div class="card product-details">
+          <img class="card-img-top" src="phonestand3.png" alt="Card image cap">
+          <div class="card-body product-details-body">
+            <h5 class="card-title product-details-title">Adjustable to Many Angles</h5>
+          </div>
+        </div>
+
+        <div class="card product-details">
+          <img class="card-img-top" src="phonestand4.png" alt="Card image cap">
+          <div class="card-body product-details-body">
+            <h5 class="card-title product-details-title">Perfect for Zoom Meetings</h5>
+          </div>
+        </div>
+
+        <div class="card product-details">
+          <img class="card-img-top" src="phonestand5.png" alt="Card image cap">
+          <div class="card-body product-details-body">
+            <h5 class="card-title product-details-title">Product Dimensions (Width/Height)</h5>
+          </div>
+        </div>
+
+        <div class="card product-details">
+          <img class="card-img-top" src="holsterdetail4.png" alt="Card image cap">
+          <div class="card-body product-details-body">
+            <h5 class="card-title product-details-title">High Quality Material</h5>
+          </div>
+        </div>
+      </div>
+
+      <h1 id = "section2" class = "display-1 mt-5">Reviews</h1>
+      <div class = "reviews"></div>
+
+      <button type = "button" class="btn btn-outline-dark nextbutton">Next</button>
+      <button type = "button" class="btn btn-outline-dark backbutton">Back</button>
     </div>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap.native/2.0.15/bootstrap-native-v4.min.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src = "script.js"></script>
+    <script src = "reviewscript.js"></script>
+    <script src = "easelbuy.js"></script>
+
+    <script async src="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="NjQ1ZGVmZjQtYzFjYS00MjFmLTk4OWUtOTYyNThmN2UxZTRjNjM3NDI4MTU2ODA2NDEzMzk3" data-config-modal-style="side"></div>
   </body>
 </html>
