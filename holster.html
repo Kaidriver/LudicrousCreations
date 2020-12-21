@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon-16x16.ico">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
@@ -184,6 +184,12 @@
         text-align: center;
         font-size: 425%;
       }
+
+      .discount {
+        font-size: 60%;
+        margin-right: 2%;
+      }
+
       @media (max-width: 768px) {
         #flex, #section2 {
           font-size: 375%;
@@ -303,7 +309,7 @@
 
           <h5 class = "star-title">4.9</h5>
           <img class = "star-review" src = "5stars.png">
-          <h5 id = "price">$15.00 Free Shipping</h5>
+          <h5 id = "price">$15.00 <sup class = "discount text-success"><strike>$25.00</strike> 40% off</sup></h5>
 
           <form id ="product-fields">
             <div class = "form-row mt-3">
@@ -338,7 +344,7 @@
           </form>
 
           <img id ="shipping-img" src = "shipping.png">
-          <h5 id = "shipping-text">Expected Delivery: 5-8 Days (Ships from Royal Oak, MI)</h5>
+          <h5 id = "shipping-text">Expected Delivery: 5-8 Days (Free Shipping from Royal Oak, MI)</h5>
           <br>
           <button class = "buy-button snipcart-add-item"
             data-item-id="1"
