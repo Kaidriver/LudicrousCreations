@@ -23,10 +23,6 @@
          font-family: 'Permanent Marker', sans-serif;
       }
 
-      .card-header {
-        font-size: 150%;
-        font-family: 'Permanent Marker', sans-serif;
-      }
       .product-details {
         background-color: transparent !important;
         border: none !important;
@@ -44,6 +40,24 @@
         width: 30% !important;
       }
 
+      .faq {
+        width: 100% !important;
+      }
+
+      .btn-link {
+        color: black;
+        font-size: 55%;
+        white-space: normal;
+        text-align: left;
+        padding-left: 0;
+      }
+
+      .coloredBkg {
+        background-color: #ededed;
+      }
+      .btn-link:hover {
+        color: black;
+      }
       .review-block {
         margin-bottom: 1.5%;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -229,7 +243,11 @@
         .product-details {
           width: 100% !important;
         }
+
+
       }
+
+
 
     </style>
     <title>LudicrousCreations</title>
@@ -407,6 +425,95 @@
           <img class="card-img-top" src="holsterdetail6.png" alt="Card image cap">
           <div class="card-body product-details-body">
             <h5 class="card-title product-details-title">Perfect as a Gift</h5>
+          </div>
+        </div>
+      </div>
+
+      <h1 id = "flex" class = "display-1 mt-5">FAQ</h1>
+      <div class="accordion" id="accordionExample">
+        <div class="card faq">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Which locations do you ship to?
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body coloredBkg">
+              We ship anywhere in the United States.
+            </div>
+          </div>
+        </div>
+        <div class="card faq">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                How long should I expect to wait for my order?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body coloredBkg">
+              We should be able to create your product in one to two business days, and deliver it to you in one to three business days
+            </div>
+          </div>
+        </div>
+        <div class="card faq">
+          <div class="card-header" id="headingSix">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                How much does shipping cost?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+            <div class="card-body coloredBkg">
+              Absolutely nothing! We offer free shipping for any order.
+            </div>
+          </div>
+        </div>
+        <div class="card faq">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Can I refund my order?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body coloredBkg">
+              Please email us at ludicrouscreations@gmail.com to request a refund.
+            </div>
+          </div>
+        </div>
+        <div class="card faq">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Can I personalize the product that I want to buy?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body coloredBkg">
+              Please email us at ludicrouscreations@gmail.com for any personalization inquiries.
+            </div>
+          </div>
+        </div>
+        <div class="card faq">
+          <div class="card-header" id="headingFive">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Got any more questions?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div class="card-body coloredBkg">
+              Please email us at ludicrouscreations@gmail.com. We are happy to help!
+            </div>
           </div>
         </div>
       </div>
