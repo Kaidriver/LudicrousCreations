@@ -1,0 +1,361 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-185499912-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-185499912-1');
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content = "Selling 3D printed creations that are nifty and useful. each made with quality and care."/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon-16x16.ico">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da|Roboto&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://app.snipcart.com">
+    <link rel="preconnect" href="https://cdn.snipcart.com">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.css" />
+    <style>
+      body {
+        font-family: 'Baloo Da', cursive;
+      }
+
+      nav {
+        font-family: 'Permanent Marker', sans-serif;
+      }
+
+      .card-header {
+        font-size: 150%;
+      }
+
+      .border-right {
+        border-right: 2px solid #333 !important;
+      }
+
+      .navbar {
+         font-size: 130% !important;
+      }
+
+      .alert {
+        margin-top: -3%;
+      }
+
+      h1 {
+       overflow: hidden;
+       text-align: center;
+       font-family: 'Baloo Da', cursive;
+      }
+      h1:before,
+      h1:after {
+       background-color: #333;
+       content: "";
+       display: inline-block;
+       height: 3px;
+       position: relative;
+       vertical-align: middle;
+       width: 50%;
+      }
+      h1:before {
+       right: 0.5em;
+       margin-left: -50%;
+      }
+      h1:after {
+       left: 0.5em;
+       margin-right: -50%;
+      }
+      .header-container {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+      }
+      .video-container {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+      }
+      video {
+        margin: auto;
+        position: absolute;
+        z-index: -1;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: .76;
+        width: auto;
+        height: auto;
+      }
+
+      #content {
+        text-align:center;
+        margin-top: 10%;
+        height: auto;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+        letter-spacing: 5px;
+        font-family: 'Permanent Marker', sans-serif;
+      }
+      #section1:before, #section2:before {
+        padding-top: 30px;
+        display: block;
+        content:"";
+      }
+
+      #banner {
+        margin-top: 5%;
+        max-width:100%;
+        max-height:100%;
+      }
+
+      .card {
+        background-color: transparent !important;
+        border: none !important;
+        width: 30%;
+        margin-bottom: 3%;
+      }
+      .card-title {
+        text-align: center;
+        margin-bottom: -0.8%;
+      }
+      .card-body {
+        padding: 2% !important;
+      }
+
+      .submit {
+        margin-top: 1.5%;
+        border-width: thick;
+        font-size: 100%;
+        padding: 0.5% 2%;
+        color: black;
+      }
+
+      .shopbtn {
+        margin-top: 5%;
+        border-width: thick;
+        font-size: 150%;
+        padding: 2% 4%;
+        color: black;
+      }
+
+      .details {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      footer {
+        background-color: #353a40;
+        padding: 0.3em;
+        color: white;
+        margin-top: 5em;
+      }
+
+      .socials {
+        margin-left: 1em;
+        width: 1.5em;
+      }
+      @media (max-width: 420px) {
+
+
+        .display-3 {
+          font-size: 150% !important;
+        }
+        #flex {
+          font-size: 325% !important;
+        }
+        #content {
+          margin-top: 25% !important;
+        }
+        body {
+          background-size: 200px 200px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        #flex {
+          font-size: 450%;
+        }
+        .border-right {
+          border-right: 0px !important;
+        }
+
+
+      }
+
+      @media (max-width: 950px) {
+
+        .display-1 {
+          font-size: 300%;
+        }
+        .display-3 {
+          font-size: 200%;
+        }
+        #content {
+          margin-top: 20%;
+        }
+      }
+
+
+      @media (max-width: 480px) {
+        .card {
+          width: 100% !important;
+        }
+        .card-title {
+          font-size: 150%;
+        }
+      }
+
+
+      @media (min-width: 1200px) {
+
+      }
+
+    </style>
+    <title>LudicrousCreations</title>
+
+  </head>
+  <body data-spy = "scroll" data-target = ".navbar" data-offset="50">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+
+      <a class="navbar-brand" href="index.html">
+        <img src="logo5.png" width="180" height="50" class="d-inline-block align-top" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav w-100 nav-justified">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="creations.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">Suggestions</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+
+      <div class = "header-container">
+
+        <div class = "video-container">
+          <video preload autoplay loop muted poster = "poster.png">
+            <source src = "final2.mp4" type = "video/mp4">
+          </video>
+          <h2 class = "display-1" id = "content">Innovative. Creative. Distinctive.</h2>
+          <h2 class = "display-3" id = "content">LudicrousCreations</h2>
+        </div>
+      </div>
+      <div class = "alert alert-success alert-dismissible fade show text-center mb-0" role = "alert">
+        Use code <strong>WEBSITE</strong> for 50% off!
+        <a href = "creations.html" role = "button"  class="btn btn-outline-success ml-3">Buy Now</a>
+        <button type = "button" class = "close" data-dismiss = "alert" aria-label = "Close">
+          <span aria-hidden = "true">&times;</span>
+        </button>
+      </div>
+
+
+
+      <div class = "container">
+
+        <div id = "section1">
+          <img id = "banner" src = "banner.png">
+        </div>
+        <h1 id = "flex" class = "display-1 text-center mt-5"> About Our Products </h1>
+        <div class="details">
+          <div class="card">
+            <img class="card-img-top" src="ballfinished1.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Solves Every Day Problems</h5>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="ballfinished2.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Created with Precision Printing</h5>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="ballfinished3.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">100% Customer Satisfaction Guaranteed</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <a href = "creations.html" role = "button" class="btn btn-outline-dark shopbtn">Check Them Out</a>
+        </div>
+
+         <div id = "section2">
+           <h1 id = "flex" class = "display-1 text-center mt-5">Got Ideas?</h1>
+           <p class = "lead mt-5"> Suggestions or general feedback? Tell us by submitting a form below. Every idea counts! </p>
+         </div>
+
+
+         <form class = "mb-5">
+           <div class = "form-group">
+             <label>Name</label>
+             <input type = "text" class = "form-control" placeholder = "Add Name" id = "nameInput">
+           </div>
+           <div class = "form-group">
+             <label>Suggestion</label>
+             <textarea type = "text" class = "form-control" placeholder = "Add Meesage" id = "messageInput"></textarea>
+           </div>
+           <div class = "text-center">
+             <button type = "button" class = "btn btn-outline-dark submit" onclick="pushMessage()">Submit</button>
+           </div>
+         </form>
+      </div>
+      <footer>
+        <div class = "container">
+          <div class = "row">
+            <div class = "col-md-4">
+              <p>Questions? Email ludicrouscreations@gmail.com</p>
+            </div>
+            <div class = "col-md-4">
+              <p class = "ml-4">Follow Us: <a href = "https://www.instagram.com/ludicrouscreations/" target=”_blank”><img class = "socials" src = "instagram.png"></a><a href = "https://www.pinterest.com/LudicrousCreations/_created/" target=”_blank”><img class = "socials" src = "pinterest.png"></a></p>
+            </div>
+            <div class = "col-md-4">
+              <p>©2020 LudicrousCreations</p>
+            </div>
+        </div>
+      </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src = "main.js"></script>
+
+    <script async src="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="NjQ1ZGVmZjQtYzFjYS00MjFmLTk4OWUtOTYyNThmN2UxZTRjNjM3NDI4MTU2ODA2NDEzMzk3" data-config-modal-style="side"></div>
+  </body>
+</html>
