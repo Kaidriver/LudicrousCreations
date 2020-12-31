@@ -234,6 +234,16 @@
       .email-title {
         font-size: 1.8em;
       }
+
+      .cart {
+        width: 2em;
+        line-height: 10;
+      }
+
+      .snipcart-total-price {
+        color: #999D9F;
+        font-size: 80%;
+      }
       @media (max-width: 768px) {
         #flex, #section2 {
           font-size: 375%;
@@ -327,15 +337,19 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html#section2">Suggestions</a>
           </li>
+          <li class = "nav-item">
+            <input type = "image" class = "cart snipcart-checkout" src = "cart.png">
+            <span class="snipcart-total-price"></span>
+          </li>
         </ul>
       </div>
     </nav>
-
     <div class = "container">
       <div class = "jumbotron text-center mt-5">
         <h1 class = "display-3 jumbo-title">Beer Holsters</h1>
         <p id = "sub-title" class = "lead">Never lose your drink ever again</p>
       </div>
+
       <div class = "row product-info">
         <div class = "col-md-5 mb-5">
           <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -428,7 +442,7 @@
             data-item-custom1-value="Circle"
             data-item-custom2-name="Color"
             data-item-custom2-options="Red|Yellow|Green|Blue|Black"
-            data-item-custom2-value="Red" disabled>
+            data-item-custom2-value="Red">
             Add to Cart
           </button>
         </div>
