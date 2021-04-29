@@ -400,17 +400,22 @@
 
           <form id ="product-fields">
             <div class = "form-row mt-3">
-              <div class="form-group col-12">
+              <div class="form-group col-7">
                 <label for="exampleFormControlSelect1">Select Type</label>
                 <select class="form-control" id="select-type">
                   <option>Arcade Machine</option>
                   <option>TV</option>
                 </select>
               </div>
+
+              <div class="form-group col-5">
+                <label for="exampleFormControlSelect1">Quantity</label>
+                <input type="number" min="1" class="form-control" id="quantity" placeholder="1">
+              </div>
             </div>
 
             <div class = "form-row mt-3">
-              <div class="form-group col-7">
+              <div class="form-group col-6">
                 <label for="exampleFormControlSelect1">Select Color</label>
                 <select class="form-control" id="select-color">
                   <option>Black</option>
@@ -422,11 +427,20 @@
                   <option>White</option>
                 </select>
               </div>
-              <div class="form-group col-5">
-                <label for="exampleFormControlSelect1">Quantity</label>
-                <input type="number" min="1" class="form-control" id="quantity" placeholder="1">
+
+              <div class="form-group col-6">
+                <label for="exampleFormControlSelect1">Select Joystick/Knob Color</label>
+                <select class="form-control" id="select-secondary-color">
+                  <option>Black</option>
+                  <option>Blue</option>
+                  <option>Green</option>
+                  <option>Orange</option>
+                  <option>Pink</option>
+                  <option>Red</option>
+                  <option>White</option>
+                </select>
+               </div>
               </div>
-            </div>
           </form>
 
           <img id ="shipping-img" src = "shipping.png">
@@ -442,6 +456,9 @@
             data-item-custom1-name="Color"
             data-item-custom1-options="Black|Blue|Green|Orange|Pink|Red|White"
             data-item-custom1-value="Black"
+            data-item-custom3-name="Joystick/Knob Color"
+            data-item-custom3-options="Black|Blue|Green|Orange|Pink|Red|White"
+            data-item-custom3-value="Black"
             data-item-custom2-name="Type"
             data-item-custom2-options="Arcade Machine|TV"
             data-item-custom2-value="Arcade Machine">
