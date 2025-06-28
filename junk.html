@@ -20,9 +20,7 @@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Da|Roboto&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://app.snipcart.com">
-    <link rel="preconnect" href="https://cdn.snipcart.com">
-    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.27/default/snipcart.css" />
+    
     <style>
       body {
         font-family: 'Baloo Da', cursive;
@@ -140,9 +138,7 @@
         margin-top: 5%;
       }
 
-      #snipcart {
-        font-family: 'Baloo Da', cursive !important;
-      }
+      
       .backbutton, .nextbutton {
         float: right;
         margin-left: 2%;
@@ -161,6 +157,11 @@
         font-size: 110%;
         background-color: transparent;
       }
+      
+      .buy-button:hover {
+        cursor: pointer;
+      }
+
       .jumbo-title:before,
       .jumbo-title:after {
         background-color: white;
@@ -238,10 +239,7 @@
         width: 2em;
         line-height: 10;
       }
-      .snipcart-total-price {
-        color: #999D9F;
-        font-size: 80%;
-      }
+      
       @media (max-width: 768px) {
         #flex, #section2 {
           font-size: 375%;
@@ -332,10 +330,7 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html#section2">Suggestions</a>
           </li>
-          <li class = "nav-item">
-            <input type = "image" class = "cart snipcart-checkout" src = "cart.png">
-            <span class="snipcart-total-price"></span>
-          </li>
+          
         </ul>
       </div>
     </nav>
@@ -460,24 +455,10 @@
           <img id ="shipping-img" src = "shipping.png">
           <h5 id = "shipping-text">Expected Delivery: 5-8 Days (Free Shipping from Royal Oak, MI)</h5>
           <br>
-          <button class = "buy-button snipcart-add-item"
-            data-item-id="7"
-            data-item-price="12.00"
-            data-item-url="/junk.html"
-            data-item-name="Junk Food Counter"
-            data-item-image="junk.jpg"
-            data-item-quantity="1"
-            data-item-custom1-name="Board Color"
-            data-item-custom1-options="Black|Green|Red|Blue|White|Pink|Orange"
-            data-item-custom1-value="White"
-            data-item-custom2-name="Structure Color"
-            data-item-custom2-options="Black|Green|Red|Blue|White|Pink|Orange"
-            data-item-custom2-value="Green"
-            data-item-custom3-name="Bead Color"
-            data-item-custom3-options="Black|Green|Red|Blue|White|Pink|Orange"
-            data-item-custom3-value="Blue">
-            Add to Cart
-          </button>
+          <button class = "buy-button" onclick="window.open(
+            'https://www.etsy.com/listing/779490992/weight-loss-tracker-foodie-gift-self',
+            '_blank' // <- This is what makes it open in a new window.
+          );">Buy Now</button>
         </div>
       </div>
 
@@ -665,7 +646,7 @@
             <p class = "ml-4">Follow Us: <a href = "https://www.instagram.com/ludicrouscreations/" target=”_blank”><img class = "socials" src = "instagram.png"></a><a href = "https://www.pinterest.com/LudicrousCreations/_created/" target=”_blank”><img class = "socials" src = "pinterest.png"></a></p>
           </div>
           <div class = "col-md-4">
-            <p>©2021 LudicrousCreations</p>
+            <p>©2025 LudicrousCreations</p>
           </div>
       </div>
     </footer>
@@ -676,7 +657,6 @@
     <script src = "reviewscript.js"></script>
     <script src = "junkbuy.js"></script>
 
-    <script async src="https://cdn.snipcart.com/themes/v3.0.27/default/snipcart.js"></script>
-    <div id="snipcart" data-config-modal-style="side" data-api-key="YjM1N2MyOTYtNjY5OC00ZDcwLTliNDUtOTMyNWZjZWIyZTgwNjM3NDI4MTU2ODA2NDEzMzk3" hidden></div>
+    
   </body>
 </html>
